@@ -1,17 +1,17 @@
 # Fuzz-testing-Django-app
 
-##This is Django project which is integrated with OWASP ZAP tool and ELK Stack 
+## This is Django project which is integrated with OWASP ZAP tool and ELK Stack 
 
 It's important to download tools mentioned above
 
-###Configuration of the Owasp Zap Tool
+### Configuration of the Owasp Zap Tool
 
-####ZAP requires Java 11+ to run.
+#### ZAP requires Java 11+ to run.
 
-####In order to OWASP be able to intercept HTTPS requests, it is necessary to generate a certificate by OWASP that we import into the browser. 
+#### In order to OWASP be able to intercept HTTPS requests, it is necessary to generate a certificate by OWASP that we import into the browser. 
 In OWASP go to tools/options/dynamic SSL certificates and then generate certificate and copy it into browser certificate list.
 
-####In order to Filebeat  be able to register changes that occur in Django's log file, it is necessary to add the following lines to the filebeat.yml file:
+#### In order to Filebeat  be able to register changes that occur in Django's log file, it is necessary to add the following lines to the filebeat.yml file:
 
 ```
 filebeat.inputs:
