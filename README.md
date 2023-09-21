@@ -28,7 +28,7 @@ filebeat.inputs:
         add_error_key: true
 ```
 
-####To integrate Kibana with ElasticSearch, we need to edit the kibana.yaml file located in the config directory in the Kibana download directory, and uncomment line:
+#### To integrate Kibana with ElasticSearch, we need to edit the kibana.yaml file located in the config directory in the Kibana download directory, and uncomment line:
 
 ```
 elasticsearch.hosts: ["http://localhost:9200"]
